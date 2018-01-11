@@ -30,7 +30,7 @@ $('.countdown').downCount({
     date: '06/10/2016 12:00:00',
     offset: +10
 }, function () {
-    alert('WOOT WOOT, done!');
+    // alert('WOOT WOOT, done!');
 });
      
 
@@ -38,84 +38,84 @@ $('.countdown').downCount({
 // Google Map Customization
 // -------------------------------------------------------------
 
-jQuery(function ($) {
+// jQuery(function ($) {
     
-    'use strict';
+//     'use strict';
 
-    var map;
+//     var map;
 
-    map = new GMaps({
-        el: '#map-wrapper',
-        lat: 23.475719, //Replace Here Location Google Map Lat
-        lng: 91.137101, //Replace Here Location Google Map Lng
-        scrollwheel:false,
-        zoom: 16,
-        zoomControl : true,
-        panControl : true,
-        streetViewControl : true,
-        mapTypeControl: false,
-        overviewMapControl: false,
-        clickable: true
-    });
+//     map = new GMaps({
+//         el: '#map-wrapper',
+//         lat: 23.475719, //Replace Here Location Google Map Lat
+//         lng: 91.137101, //Replace Here Location Google Map Lng
+//         scrollwheel:false,
+//         zoom: 16,
+//         zoomControl : true,
+//         panControl : true,
+//         streetViewControl : true,
+//         mapTypeControl: false,
+//         overviewMapControl: false,
+//         clickable: true
+//     });
 
-    var image = '';
-    map.addMarker({
-        lat: 23.475719, //Replace Here Location Google Map Lat
-        lng: 91.137101, //Replace Here Location Google Map Lat
-        icon: image,
-        animation: google.maps.Animation.DROP,
-        verticalAlign: 'bottom',
-        horizontalAlign: 'center',
-        backgroundColor: '#d9d9d9',
-    });
+//     var image = '';
+//     map.addMarker({
+//         lat: 23.475719, //Replace Here Location Google Map Lat
+//         lng: 91.137101, //Replace Here Location Google Map Lat
+//         icon: image,
+//         animation: google.maps.Animation.DROP,
+//         verticalAlign: 'bottom',
+//         horizontalAlign: 'center',
+//         backgroundColor: '#d9d9d9',
+//     });
 
 
-    var styles = [ 
+//     var styles = [ 
 
-    {
-        "featureType": "road",
-        "stylers": [
-        { "color": "#ffffff" }
-        ]
-    },{
-        "featureType": "water",
-        "stylers": [
-        { "color": "#99b3cc" }
-        ]
-    },{
-        "featureType": "landscape",
-        "stylers": [
-        { "color": "#f2efe9" }
-        ]
-    },{
-        "elementType": "labels.text.fill",
-        "stylers": [
-        { "color": "#d3cfcf" }
-        ]
-    },{
-        "featureType": "poi",
-        "stylers": [
-        { "color": "#bfbfbf" }
-        ]
-    },{
-        "elementType": "labels.text",
-        "stylers": [
-        { "saturation": 1 },
-        { "weight": 0.1 },
-        { "color": "#000000" }
-        ]
-    }
+//     {
+//         "featureType": "road",
+//         "stylers": [
+//         { "color": "#ffffff" }
+//         ]
+//     },{
+//         "featureType": "water",
+//         "stylers": [
+//         { "color": "#99b3cc" }
+//         ]
+//     },{
+//         "featureType": "landscape",
+//         "stylers": [
+//         { "color": "#f2efe9" }
+//         ]
+//     },{
+//         "elementType": "labels.text.fill",
+//         "stylers": [
+//         { "color": "#d3cfcf" }
+//         ]
+//     },{
+//         "featureType": "poi",
+//         "stylers": [
+//         { "color": "#bfbfbf" }
+//         ]
+//     },{
+//         "elementType": "labels.text",
+//         "stylers": [
+//         { "saturation": 1 },
+//         { "weight": 0.1 },
+//         { "color": "#000000" }
+//         ]
+//     }
 
-    ];
+//     ];
 
-    map.addStyle({
-        styledMapName:"Styled Map",
-        styles: styles,
-        mapTypeId: "map_style"  
-    });
+//     map.addStyle({
+//         styledMapName:"Styled Map",
+//         styles: styles,
+//         mapTypeId: "map_style"  
+//     });
 
-    map.setStyle("map_style");
-}());
+//     map.setStyle("map_style");
+// }());
 
 /**
  * MAILCHIMP
